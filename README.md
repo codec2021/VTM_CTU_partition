@@ -15,6 +15,9 @@ You will get:
 
 
 ## Step1. Change VTM22.0 Encoder Code
+
+VTM Code: https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM.git
+
 At the end of function **void EncCu::compressCtu**, please add:
 
 ```c++
