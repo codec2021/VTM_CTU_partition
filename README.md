@@ -3,9 +3,16 @@ Save and Dispaly VTM CTU partition info.
 
 This Project Usage:
 ```
-git clone
+First, install numpy, PIL, matplotlib for your Python3.
+
+And then:
+git clone https://github.com/codec2021/VTM_CTU_partition.git
+
 python3 Draw_CTU_Partition.py
 ```
+You will get:
+<img width="996" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/7bea13b7-30b7-4025-80a7-6f1197ed5cbf">
+
 
 ## Step1. Change VTM22.0 Encoder Code
 At the end of function **void EncCu::compressCtu**, please add:
