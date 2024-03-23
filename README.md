@@ -1,5 +1,11 @@
 # VTM_CTU_partition
-Save and Dispaly VTM CTU partition info
+Save and Dispaly VTM CTU partition info.
+
+This Project Usage:
+```
+git clone
+python3 Draw_CTU_Partition.py
+```
 
 ## Step1. Change VTM22.0 Encoder Code
 At the end of function **void EncCu::compressCtu**, please add:
