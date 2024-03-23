@@ -37,8 +37,9 @@ for example:
 
 
 ## Step4. run the Draw_CTU_Partition.py by python3
-set the seq yuv name, width, height, ctu_size:
-<img width="942" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/5c21948b-6cba-4788-bc75-fa09fa08b2f1">
+set the encoded yuv name, width, height, ctu_size:
+<img width="794" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/79d4f724-65a5-437c-ad79-eaab09a71a8e">
+
 
 and then run:
 ```shell
