@@ -49,10 +49,14 @@ ctuPartitionFile.close();
 Then build VTM22.0 Project to get the **EncoderApp** binary
 
 ### Step2. run VTM Encoder
+Prepare your test yuv and cfg file, then run
+
 for example:
 ```shell
 ./EncoderApp -c ./encoder_randomaccess_vtm.cfg -i Johnny_1280x720_60.yuv -wdt 1280 -hgt 720 -fr 30 -f 1 -q 30 -b Johnny_1280x720_60_VTM.h266
 ```
+you will get some file named as **CTU_0.txt, CTU_1.txt** ... file in your local dir.
+
 ### Step3. move all CTU_x.txt file to local ./CTU Dir
 ```shell
 mkdir CTU
