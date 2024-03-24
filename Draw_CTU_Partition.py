@@ -69,7 +69,7 @@ def frame_partition(test_seq, unit, yuv_img, frame_width, frame_height, ctu_size
 
 if __name__ == "__main__":
     seq_name  = "Johnny_1280x720_60_0" #Input the YUV420 frame corresponding to CTU_x.txt
-    width     = 1280                   #Set the VTM Encoder  width
+    width     = 1280                   #Set the VTM Encoder width
     height    = 720                    #Set the VTM Encoder height
     ctu_size  = 128                    #Set the VTM Encoder ctu size
     frame_num = 0
