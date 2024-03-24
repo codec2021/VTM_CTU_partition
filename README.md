@@ -1,6 +1,8 @@
 # VTM_CTU_partition
 Save and Dispaly VTM CTU partition info.
 
+**Johnny_1280x720_60_0.yuv, Johnny_1280x720_60_VTM.h266 and CTU/CTU_x.txt** is only used for test. 
+
 This Project Usage:
 ```
 First, install numpy, PIL, matplotlib for your Python3.
@@ -9,8 +11,9 @@ And then:
 git clone https://github.com/codec2021/VTM_CTU_partition.git
 
 python3 Draw_CTU_Partition.py
+
+You will get the result picture:
 ```
-You will get:
 <img width="996" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/7bea13b7-30b7-4025-80a7-6f1197ed5cbf">
 
 
