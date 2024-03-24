@@ -46,6 +46,7 @@ for (auto &currCU : cs.traverseCUs(CS::getArea(cs, area, ChannelType::LUMA), Cha
 }
 ctuPartitionFile.close();
 ```
+Then build VTM22.0 Project to get the **EncoderApp** binary
 
 ### Step2. run VTM Encoder
 for example:
