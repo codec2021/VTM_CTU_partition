@@ -21,25 +21,25 @@ VTM Code: https://vcgit.hhi.fraunhofer.de/jvet/VVCSoftware_VTM.git
 At the end of function **void EncCu::compressCtu**, please add:
 
 ```c++
-std::string filename = std::to_string(ctuRsAddr);
-std::ofstream myfile;
+std::string ctuNum = std::to_string(ctuRsAddr);
+std::ofstream ctuPartitionFile;
 
-std::cout << filename << std::endl;
-myfile.open("./CTU_" + filename + ".txt");
+std::cout << ctuNum << std::endl;
+ctuPartitionFile.open("./CTU_" + ctuNum + ".txt");
 
 for (auto &currCU : cs.traverseCUs(CS::getArea(cs, area, ChannelType::LUMA), ChannelType::LUMA))
 {
-  const CompArea&  lumaArea = currCU.block(COMPONENT_Y);
+	const CompArea&  lumaArea = currCU.block(COMPONENT_Y);
 	int cuX = lumaArea.x;
 	int cuY = lumaArea.y;
 	int cuH = lumaArea.height;
 	int cuW = lumaArea.width;
-	std::string info = "";
+	std::string cuInfo = "";
 
-  info = std::to_string(cuX) + " " + std::to_string(cuY) + " " + std::to_string(cuH) +" "+ std::to_string(cuW) +"\n";
-	myfile << info;
+	cuInfo = std::to_string(cuX) + " " + std::to_string(cuY) + " " + std::to_string(cuH) + " " + std::to_string(cuW) +"\n";
+	ctuPartitionFile << cuInfo;
 }
-myfile.close();
+ctuPartitionFile.close();
 ```
 
 ## Step2. run VTM Encoder
