@@ -47,14 +47,15 @@ for example:
 ```shell
 ./EncoderApp -c ./encoder_randomaccess_vtm.cfg -i Johnny_1280x720_60.yuv -wdt 1280 -hgt 720 -fr 30 -f 1 -q 30 -b Johnny_1280x720_60_VTM.h266
 ```
-## Step3. move all CTU_x.txt to local CTU Dir
+## Step3. move all CTU_x.txt file to local ./CTU Dir
 <img width="1347" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/60fd7d6c-5c6b-42a5-adb6-f60f44e070f0">
 
 
 
 ## Step4. run the Draw_CTU_Partition.py by python3
 set the encoded yuv name, width, height, ctu_size:
-<img width="794" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/79d4f724-65a5-437c-ad79-eaab09a71a8e">
+<img width="841" alt="image" src="https://github.com/codec2021/VTM_CTU_partition/assets/13790178/2ca13dcf-75d7-4a4d-a705-5ea7142c9606">
+
 
 
 and then run:
